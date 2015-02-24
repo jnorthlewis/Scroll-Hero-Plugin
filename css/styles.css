@@ -12,6 +12,7 @@ html {
 body {
 	background-color: #f9f9f9;
 	line-height: 1.5;
+	font-size: 1.4rem;
 }
 
 img {
@@ -39,6 +40,8 @@ header.top {
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom center;
+
+	margin-bottom: 40px;
 
 }
 
