@@ -11,6 +11,7 @@ html {
 
 body {
 	background-color: #f9f9f9;
+	line-height: 1.5;
 }
 
 img {
@@ -28,20 +29,40 @@ a {
 .innerWrapper {
 	max-width: 1200px;
 	width: 80%;
+	margin: 0 auto;
 }
 
 /* === H E A D E R === */
 
 header.top {
-	background-image: url("http://lorempixel.com/1200/500");
+	background-image: url("../images/header-bg.jpg");
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom center;
 
 }
 
-h1 {
-	font-size: 3rem;
-	margin: 0;
-	color: #fff;
+.siteTitle {
+	width: 90%;
+	margin: 0 auto;
+	padding: 125px;
+
+	text-align: center;
 }
+
+	.siteTitle h1 {
+		font-size: 3rem;
+		margin: 0;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.siteTitle p {
+		margin: 0;
+		font-size: 1.5rem;
+		color: #fff;
+		text-align: center;
+	}
+
+
