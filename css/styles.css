@@ -29,6 +29,10 @@ a {
 	text-decoration: none;
 }
 
+.wrapper {
+	height:100%;
+}
+
 .innerWrapper {
 	max-width: 1200px;
 	width: 80%;
@@ -47,27 +51,11 @@ header.top {
 	height: 100%;
 
 	overflow: hidden;
-
 }
 
-	/*header.top {
-		height: auto;
-		position: fixed;
-		top: 0;
-		left: 0;
-		z-index: 1;
-	}
 
-		header.top img {
-			height: 50%;
-		}*/
-.wrapper {
-	height:100%;
-}
 .siteTitle {
 	width: 90%;
-	/*margin: 0 auto;
-	padding: 125px;*/
 
 	text-align: center;
 	position: absolute;
@@ -75,7 +63,6 @@ header.top {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 2;
-
 }
 
 	.siteTitle h1 {
@@ -95,13 +82,15 @@ header.top {
 
 	/* === M A I N === */
 
-	section.main {
-		position: relative;
-		z-index: 3;
-	}
+section.main {
+	position: relative;
+	z-index: 3;
+}
 
-		section.main img {
-			-webkit-filter: brightness(0%);
-		}
+	section.main img {
+		zoom: 1;
+		/*-webkit-filter: alpha(opacity=1);*/
+		-webkit-filter: opacity(0%);
+	}
 
 
