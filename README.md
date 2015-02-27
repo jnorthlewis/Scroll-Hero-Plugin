@@ -10,17 +10,18 @@ Include jQuery and a link to the plugin at the bottom of your HTML document, bef
 ```
 
 ### Step 2
-2. Copy the following code and paste it below your jQuery link. Alternatively, paste it into your .js file and add the link on your html. 
+Copy the following code and paste it below your jQuery link. Alternatively, paste it into your .js file and add the link on your html. 
 
-&lt;script&gt;
+	<script>
 	$(function() {
 		$('.top').scrollHero({
 
 		});
 	});
-&lt;/script&gt;
+	</script>
 
-3. 3. The default state is to blur on scroll. If you want it to darken or turn to grayscale, do the following:
+### Step 3
+The default state is to blur on scroll. If you want it to darken or turn to grayscale, do the following:
 
 &lt;script&gt;
 	$(function() {
