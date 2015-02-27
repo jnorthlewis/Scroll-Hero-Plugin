@@ -5,12 +5,19 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'PT Mono', ;
+*/
+
 html {
 	font-size: 10px;
 	height:100%;
 }
 
 body {
+	font-family: 'Roboto', sans-serif;
 	background-color: #f9f9f9;
 	line-height: 1.5;
 	font-size: 1.4rem;
@@ -30,7 +37,7 @@ a {
 }
 
 .wrapper {
-	height:100%;
+	height: 100%;
 }
 
 .innerWrapper {
@@ -62,35 +69,39 @@ header.top {
 	top: 15%;
 	left: 50%;
 	transform: translateX(-50%);
-	z-index: 2;
 }
 
 	.siteTitle h1 {
-		font-size: 3rem;
-		margin: 0;
+		font-family: 'Bangers', cursive;
+		font-size: 12rem;
+		margin-bottom: 20px;
+		line-height: 0.95;
 		color: #fff;
 		text-transform: uppercase;
-		letter-spacing: 1px;
+		letter-spacing: 8px;
+		text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
 	}
 
 	.siteTitle p {
-		margin: 0;
-		font-size: 1.5rem;
+		margin: 0 0 25px 0;
+		font-size: 2.5rem;
 		color: #fff;
 		text-align: center;
+		text-transform: uppercase;
+
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+	}
+
+	.siteTitle p.animated.pulse {
+		animation-iteration-count: infinite;
+		-webkit-animation-iteration-count: infinite;
 	}
 
 	/* === M A I N === */
 
 section.main {
-	position: relative;
-	z-index: 3;
+	height: 1000px;
 }
-
-	section.main img {
-		zoom: 1;
-		/*-webkit-filter: alpha(opacity=1);*/
-		-webkit-filter: opacity(0%);
-	}
-
 
