@@ -22,10 +22,6 @@ $.fn.scrollHero = function(options) {
 		//grayscale filter
 		var grayscalePercentage = 0 + Math.round(scrollPercentage * 120);
 
-		//opacity filter
-		var opacityFilter =  100 - Math.round(scrollPercentage * 100);
-		
-
 		var filters = 'blur('+blurAmount+'px)'; 
 
 		if(options.brightness) {

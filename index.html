@@ -34,12 +34,13 @@
 		<section class="main">
 			<div class="innerWrapper">
 				<h2>How To Use:</h2>
-				<p>1. Include jQuery at the bottom of your HTML document, before the last &lt;body&gt; tag.</p>
+				<p>1. Include jQuery and a link to the plugin at the bottom of your HTML document, before the last &lt;body&gt; tag.</p>
 				
 				<div class="contentCode">
 					<pre>
 						<code>
 &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.scrollHero.js&quot;&gt;&lt;/script&gt;
 						</code>
 					</pre>
 				</div>
@@ -60,7 +61,7 @@
 					</pre>
 				</div> <!--END .codeContent-->
 
-				<p>3. The default state is to blur on scroll. If you want it to darken or desaturate, do the following:</p>
+				<p>3. The default state is to blur on scroll. If you want it to darken or turn to grayscale, do the following:</p>
 
 				<div class="codeContent">
 					<pre>
@@ -97,7 +98,7 @@
 	<script>
 	$(function() {
 		$('.top').scrollHero({
-			
+
 		});
 	});
 	</script>
