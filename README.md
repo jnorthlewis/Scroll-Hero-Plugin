@@ -23,12 +23,12 @@ Copy the following code and paste it below your jQuery link. Alternatively, past
 ### Step 3
 The default state is to blur on scroll. If you want it to darken or turn to grayscale, do the following:
 
-&lt;script&gt;
+	<script>
 	$(function() {
 		$('.top').scrollHero({
 			brightness: true
-				OR
+				  OR
 			grayscale: true
 		});
 	});
-&lt;/script&gt;
+	</script>

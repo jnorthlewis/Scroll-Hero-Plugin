@@ -19,6 +19,8 @@ html {
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #f9f9f9;
+	color: #565A5C;
+	font-weight: 400;
 	line-height: 1.5;
 	font-size: 1.4rem;
 	height:100%;
@@ -99,9 +101,63 @@ header.top {
 		-webkit-animation-iteration-count: infinite;
 	}
 
-	/* === M A I N === */
+/* === M A I N === */
 
 section.main {
 	height: 1000px;
 }
 
+	.main h2 {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.main a {
+		color: #565A5C;
+		text-decoration: underline;
+		transition: all 0.2s ease;
+	}
+
+		.main a:hover {
+			color: #D14412;
+		}
+
+pre {
+	margin: 0;
+}
+
+.codeContent {
+	background-color: rgba(0,0,0,0.1);
+	padding: 0 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+	span.red {
+		color: #D14412;
+	}
+
+
+
+/* === F O O T E R === */
+
+footer.bottom {
+	margin-bottom: 20px;
+}
+
+p.copyright {
+	font-size: 1.2rem;
+	text-align: center;
+	color: #ccc;
+	font-weight: 300;
+}
+
+	p.copyright a {
+		color: #ccc;
+		text-decoration: underline;
+		transition: all 0.2s ease;
+	}
+
+		p.copyright a:hover {
+			color: #D14412
+		}
