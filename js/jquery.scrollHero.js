@@ -33,7 +33,9 @@ $.fn.scrollHero = function(options) {
 		}
 
 		$('.top').css({
-			'-webkit-filter' : filters
+			'-webkit-filter': filters,
+			'filter': filters,
+			'-moz-filter': filters
 		});
 
 
