@@ -1,4 +1,3 @@
-
 $.fn.scrollHero = function(options) {
 
 	// if no one passes options, set options to blank object
@@ -9,8 +8,9 @@ $.fn.scrollHero = function(options) {
 		//Getting the scroll percentage
 		var windowHeight = $(window).height();
 		var scrollHeight = $(window).scrollTop();
+		//console.log(scrollHeight);
 		var scrollPercentage =  (scrollHeight / windowHeight);
-
+		console.log(scrollPercentage);
 		//blur filter
 		var maxBlur = 10; // the max blur it can be
 		var blurRatio = 100 / maxBlur; //height of the window
@@ -32,12 +32,36 @@ $.fn.scrollHero = function(options) {
 			filters = 'grayscale('+ grayscalePercentage + '%)';
 		}
 
-		$('.top').css({
-			'-webkit-filter': filters,
-			'filter': filters,
-			'-moz-filter': filters
-		});
 
+		var debounce = function (func, threshold, execAsap) {
+		 
+		    var timeout;
+		 
+		    return function debounced () {
+		        var obj = this, args = arguments;
+		        function delayed () {
+		            if (!execAsap)
+		                func.apply(obj, args);
+		            timeout = null; 
+		        };
+		 
+		        if (timeout)
+		            clearTimeout(timeout);
+		        else if (execAsap)
+		            func.apply(obj, args);
+		 
+		        timeout = setTimeout(delayed, threshold || 100); 
+		    };
+		 
+		}
+
+		debounce(function() {
+			$('.top').css({
+				'-webkit-filter': filters,
+				'filter': filters,
+				'-moz-filter': filters
+			});
+		}, 100)();
 
 }); //END window.scroll
 
